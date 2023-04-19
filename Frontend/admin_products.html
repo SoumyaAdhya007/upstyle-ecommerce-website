@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upstyle | Products</title>
+    <link rel="stylesheet" href="./admin_styles/admin_navbar.css">
+    <link rel="stylesheet" href="./admin_styles/admin_products.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <a href="./index.html">
+                <img src="./images/white_logo.png" alt="">
+            </a>
+        </div>
+        <div>
+            <div>
+                <a href="./admin_orders.html"><h3>Orders</h3></a>
+            </div>
+            <div>
+                <a href="./admin_products.html"><h3>Products</h3></a>
+            </div>
+            <div>
+                <a href="./admin_users.html"><h3>Users</h3></a>
+            </div>
+            <div>
+                <a id="logout"><h3>Logout</h3></a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="products">
+        <div>
+            <div>
+              <h2>Products</h2>  
+            </div>
+            <div>
+                <form>
+                    <!-- <input type="text" placeholder="Type something here..."> -->
+                    <!-- <button type="submit">Search</button> -->
+                </form>
+                <div>
+                    <img title="Add new product" class="add_new" src="./Images/plus-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="new_product">
+            <form class="new_product_form">
+                <div>
+                    <p>Product Image</p>
+                    <input id="image_1" type="text" required>
+                    <p>Product Image</p>
+                    <input id="image_2" type="text">
+                    <p>Product Image</p>
+                    <input id="image_3" type="text">
+                </div>
+
+                <div>
+                    <p>Title</p>
+                    <input id="title" type="text" required>
+                    <p>Brand</p>
+                    <input id="brand" type="text" required>
+                    <p>Description</p>
+                    <input type="text" id="description" required>
+                </div>
+                
+                <div>
+                    <p>Gender</p>
+                    <select id="gender">
+                        <option selected value="male">Mens</option>
+                        <option value="female">Womens</option>
+                    </select>
+                    <p>Category</p>
+                    <input type="text" id="category" required>
+                    <p>Color</p>
+                    <input type="text" id="color" required>
+                </div>
+
+                <div>
+                    <p>Price(Rs.)</p>
+                    <input id="price" type="number" required>
+                    <p>Discount</p>
+                    <input id="discount" type="number" required>
+                    <button id="submit_button" type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="gallery">
+
+            <h1 class="info">Loading...</h1>
+
+            <!-- ====================================================================================SYNTAX==================== -->
+
+            <!-- <div class="id1">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012014368-Blue-Blue-1000012014368_01-2100.jpg" alt="">
+                </div>
+                <div>
+                    <select class="category" disabled>
+                        <option value="">Category</option>
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                    </select>
+                    <p>Title</p>
+                    <input class="title" type="text" readonly required>
+                    <p>Price</p>
+                    <input class="price" type="text" readonly required>
+                    <p>Brand</p>
+                    <input class="brand" type="text" readonly required>
+                    <p>Color</p>
+                    <input class="color" type="text" readonly required>
+                    <p>Discount</p>
+                    <input class="discount" type="text" readonly required>
+                    <div class="buttons">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!-- ================================================================================================================== -->
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./admin_scripts/admin_products.js"></script>
+<script src="./admin_scripts/admin_logout.js"></script>

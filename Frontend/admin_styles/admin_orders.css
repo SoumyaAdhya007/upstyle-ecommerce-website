@@ -1,0 +1,126 @@
+.orders{
+    width: 95%;
+    margin: auto;
+    margin-top: 1%
+}
+.orders h2{
+    font-weight: normal;
+    color: white;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+.gallery>div{
+    border: 1px solid white;
+    /* display: flex; */
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 3%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+/* .gallery>div:hover{
+    box-shadow: rgba(231, 231, 231, 0.349) 0px 0px 20px;
+} */
+
+.gallery>div>div{
+    width: 47%;
+}
+
+.gallery>h1{
+    color: white;
+}
+
+.gallery p{
+    color: white;
+    font-size: small;
+    text-align: center;
+    margin: 3%;
+}
+
+.gallery>div>div:nth-child(1)>img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.gallery>div>div:nth-child(2){
+    overflow-y: scroll;
+    /* border: 1px solid white; */
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+.gallery>div>div:nth-child(2)::-webkit-scrollbar{
+    width: 3px;
+    background-color: transparent;
+}
+
+.gallery>div>div:nth-child(2)::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.gallery>div>div:nth-child(2)>div{
+    margin-top: 5%
+}
+
+.gallery>div>div:nth-child(2)>div>p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.gallery>div>div:nth-child(2)>div>img{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.gallery>div>div>select{
+    width: 50%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: #1b1c21;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media all and (max-width:900px) and (min-width:800px){
+    .gallery>div{
+        height: 200px;
+    }
+}
+
+@media all and (max-width:800px) and (min-width:500px){
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media all and (max-width:500px){
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gallery>div{
+        height: 250px;
+    }
+}
+
+@media all and (max-width:400px){
+    .gallery>div{
+        height: 200px;
+    }
+}

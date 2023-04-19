@@ -1,0 +1,515 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.fullwidth{
+    width: 80%;
+    /* display: grid; */
+    
+}
+/* .width80{
+    width: 80%;
+    margin: auto;
+}
+.grid3{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid5{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.grid6{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.grid7{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.grid8{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+}
+#mustdiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#budgetdiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+/* small screen */
+/* @media only screen and (max-width: 549px) and (min-width: 230px)  {
+    #mustdiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #budgetdiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid3{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid5{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid6{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid7{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid8{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+} */
+/* #banner_img{
+    border: 1px solid black;
+} */
+#banner_img>img{
+   width: 100%;
+}
+/* #trending_img{
+    border: 1px solid green;
+} */
+#trending_img>img{
+    width: 100%;
+ }
+
+#mustdiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+    background-color: white;
+}
+#mustdiv>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#mustdiv>div>img{
+  width: 100%;
+}
+#budgetdiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#budgetdiv>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#budgetdiv>div>img{
+  width: 100%;
+}
+#bestclothing{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#bestclothing>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#bestclothing>div>img{
+  width: 100%;
+}
+#bestinnerwear{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#bestinnerwear>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#bestinnerwear>div>img{
+  width: 100%;
+}
+#bestfootwear{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#bestfootwear>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#bestfootwear>div>img{
+  width: 100%;
+}
+#bestkids{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#bestkids>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#bestkids>div>img{
+  width: 100%;
+}
+#bestbeauty{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#bestbeauty>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#bestbeauty>div>img{
+  width: 100%;
+}
+#bestacessories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#bestacessories>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#bestacessories>div>img{
+  width: 100%;
+}
+
+#bestfurnishing{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#bestfurnishing>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#bestfurnishing>div>img{
+  width: 100%;
+}
+#shopbycategory{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 15px;
+}
+#shopbycategory>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid black; */
+    /* width: auto; */
+    /* width: auto; */
+    
+}
+#shopbycategory>div>img{
+  width: 100%;
+  /* margin: auto; */
+}
+
+/* medium screen */
+
+@media only screen and (max-width: 850px) and (min-width: 550px){
+    #mustdiv{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+        background-color: white;
+    }
+    #mustdiv>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #mustdiv>div>img{
+      width: 100%;
+    }
+    #budgetdiv{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #budgetdiv>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #budgetdiv>div>img{
+      width: 100%;
+    }
+    #bestclothing{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestclothing>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestclothing>div>img{
+      width: 100%;
+    }
+    #bestinnerwear{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestinnerwear>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestinnerwear>div>img{
+      width: 100%;
+    }
+    #bestfootwear{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestfootwear>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestfootwear>div>img{
+      width: 100%;
+    }
+    #bestkids{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestkids>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestkids>div>img{
+      width: 100%;
+    }
+    #bestbeauty{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestbeauty>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestbeauty>div>img{
+      width: 100%;
+    }
+    #bestacessories{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestacessories>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestacessories>div>img{
+      width: 100%;
+    }
+    
+    #bestfurnishing{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestfurnishing>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestfurnishing>div>img{
+      width: 100%;
+    }
+    #shopbycategory{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #shopbycategory>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* border: 1px solid black; */
+        /* width: auto; */
+        /* width: auto; */
+        
+    }
+    #shopbycategory>div>img{
+      width: 100%;
+      /* margin: auto; */
+    }
+
+
+}
+
+
+/* small screen */
+
+@media only screen and (max-width: 549px) and (min-width: 220px){
+    #mustdiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+        background-color: white;
+    }
+    #mustdiv>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #mustdiv>div>img{
+      width: 100%;
+    }
+    #budgetdiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #budgetdiv>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #budgetdiv>div>img{
+      width: 100%;
+    }
+    #bestclothing{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestclothing>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestclothing>div>img{
+      width: 100%;
+    }
+    #bestinnerwear{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestinnerwear>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestinnerwear>div>img{
+      width: 100%;
+    }
+    #bestfootwear{
+        display: none;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestfootwear>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestfootwear>div>img{
+      width: 100%;
+    }
+    #bestkids{
+        display: none;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestkids>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestkids>div>img{
+      width: 100%;
+    }
+    #bestbeauty{
+        display: none;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestbeauty>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestbeauty>div>img{
+      width: 100%;
+    }
+    #bestacessories{
+        display: none;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestacessories>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestacessories>div>img{
+      width: 100%;
+    }
+    
+    #bestfurnishing{
+        display: none;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #bestfurnishing>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #bestfurnishing>div>img{
+      width: 100%;
+    }
+    #shopbycategory{
+        display: none;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    #shopbycategory>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* border: 1px solid black; */
+        /* width: auto; */
+        /* width: auto; */
+        
+    }
+    #shopbycategory>div>img{
+      width: 100%;
+      /* margin: auto; */
+    }
+
+}
+
+
+
+ 

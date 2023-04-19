@@ -1,0 +1,269 @@
+.products{
+    width: 95%;
+    margin: auto;
+    margin-top: 1%
+}
+
+.products>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid;  */
+}
+
+.products>div:nth-child(1)>div:nth-child(1){
+    padding-left: 3%;
+    color: white;
+    font-weight: normal;
+}
+
+.products>div:nth-child(1)>div:nth-child(1)>h2{
+    color: white;
+    font-weight: normal;
+}
+
+.products>div:nth-child(1)>div:nth-child(2){
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid; */
+}
+
+.products>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+    width: 10%;
+    /* border: 1px solid; */
+}
+
+.products>div:nth-child(1)>div:nth-child(2)>form{
+    width: 90%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.products>div:nth-child(1)>div:nth-child(2)>form>button{
+    background-color: rgba(255, 255, 255, 0.103);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    height: 25px;
+    padding: 1%;
+}
+
+.products>div:nth-child(1)>div:nth-child(2)>form>input{
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    border-radius: 10px;
+    background-color: transparent;
+    padding-left: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 70%;
+    color:  white;
+}
+
+.products>div:nth-child(1)>div:nth-child(2)>div>img{
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    /* transform: rotate(45deg); */
+}
+
+.new_product{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    display: none;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding: 1%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.new_product>form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+}
+
+.new_product>form>div{
+    /* border: 1px solid; */
+    padding-bottom: 4%;
+}
+
+.new_product>form>div>input{
+    width: 85%;
+    display: block;
+    margin: auto;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    padding-left: 2%;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+}
+
+.new_product>form>div>select{
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    padding-left: 2%;
+    background-color: #1b1c21;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.new_product>form>div>p{
+    margin-left: 7.5%;
+    margin-bottom: 0px;
+    font-size: small;
+    color:  white;
+}
+
+.new_product>form>div>button{
+    width: 86%;
+    display: block;
+    margin: auto;
+    margin-top: 12%;
+    height: 32px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.gallery{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+.gallery>h1{
+    color: white;
+}
+
+.gallery>div{
+    border: 1px solid white;
+    display: flex;
+    height: max-content;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+}
+
+.gallery>div:hover{
+    box-shadow: rgba(136, 136, 136, 0.349) 0px 0px 20px;
+}
+
+.gallery>div>div{
+    /* border: 1px solid; */
+    width: 50%;
+    padding: 2%;
+    /* align-self: center; */
+}
+
+.gallery>div>div:nth-child(2){
+    align-self: center;
+}
+
+.gallery>div select{
+    width: 70%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.103);
+    color: white;
+    border: 1px solid white;
+}
+
+.gallery>div input{
+    width: 90%;
+    margin: auto;
+    color: white;
+    border: 0px solid white;
+    outline: 0px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 3px;
+    font-size: small;
+    font-weight: lighter;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.gallery>div img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+    border-radius: 5px;
+}
+
+.gallery>div p{
+    font-size: small;
+    margin-bottom: 0px;
+    margin-top: 3%;
+    color: white;
+    font-weight: lighter;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.buttons>button{
+    width: 40%;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.buttons>button:hover{
+    border: 1px solid white;
+}
+
+@media all and (max-width:700px) and (min-width:400px){
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .new_product>form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width:400px){
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5%;
+    }
+    .new_product>form{
+        grid-template-columns: repeat(1, 1fr);
+        height: max-content;
+    }
+    .new_product{
+        overflow-y: scroll;
+    }
+}

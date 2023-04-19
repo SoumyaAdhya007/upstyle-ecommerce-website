@@ -1,0 +1,190 @@
+* {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  height: 80px;
+  width: 80px;
+}
+#secure {
+  height: 30px;
+}
+#navbar span {
+  margin: 0px 10px;
+}
+/* //============================ */
+#container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+}
+#left {
+  padding: 0px 20px;
+  /* border: 2px solid green; */
+  width: 55%;
+  /* height: 500px; */
+}
+#right {
+  /* border: 2px solid red; */
+  width: 30%;
+  /* height: 500px; */
+}
+#ttl {
+  /* border: 1px solid blue; */
+  margin-top: 15px;
+  border-radius: 25px;
+  background-color: #ff3f6c;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+#continue {
+  text-align: center;
+}
+#more {
+  display: none;
+}
+#myBtn {
+  margin-bottom: 7px;
+  /* border: 1px solid navy; */
+  cursor: pointer;
+  color: #ff3f6c;
+  background-color: white;
+  border: none;
+}
+#left1 {
+  padding-left: 10px;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 7px;
+  text-rendering: optimizeLegibility;
+  font-size: 13px;
+  color: #000000;
+  background-color: white;
+}
+
+#mode {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid yellowgreen; */
+}
+#modes {
+  width: 40%;
+  display: inline-block;
+  /* border: 2px solid purple; */
+}
+.btn {
+  border-bottom: 1px #eaeaec !important;
+  border: none;
+  background-color: #dedee2;
+  border-left: 5px solid #dedee2;
+  width: 90%;
+  height: 60px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: #000000;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 600;
+}
+.btn:hover {
+  color: #ff3f6c;
+  background: white;
+  border-left: 5px solid #ff3f6c;
+}
+#modepay {
+  width: 60%;
+  /* border: 1px solid rgb(99, 0, 74); */
+}
+#paymentoptions {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#bleft img {
+  width: 600px;
+}
+#bright {
+  /* border: 1px solid red; */
+  font-weight: bold;
+}
+#modepay img {
+  margin: 0px 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(205, 205, 205);
+  width: 40px;
+  height: 40px;
+}
+#modepay > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+#paynow {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 80px;
+  background-color: #ff3f6c;
+  color: white;
+}
+@media screen and (min-width: 300px) and (max-width: 860px) {
+  .dash,.address,.bag{
+    display: none;
+  }
+  #BAP {
+    display: flex;
+    flex-direction: column;
+  }
+  #container {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #paymentoptions {
+    display: flex;
+    flex-direction: column;
+  }
+  #paymentoptions img {
+    width: 350px;
+  }
+  #bright {
+    font-size: small;
+  }
+  .btn {
+    font-size: small;
+    /* width: 120px; */
+    /* border: none; */
+    /* background-color: white; */
+  }
+  #ttl {
+    /* background-color: white; */
+    color: black;
+  }
+  #left {
+    /* border: 1px solid blue; */
+    width: 90%;
+  }
+  #right {
+    /* border: 1px solid green; */
+    width: 70%;
+  }
+}

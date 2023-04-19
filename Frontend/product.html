@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <script src="https://kit.fontawesome.com/f90c67bbfa.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="./CSS/product.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <title>Upstyle | Products</title>
+</head>
+
+<body onload="loadingFun()">
+    <div id="loading"></div>
+    <header class="header">
+    </header>
+
+	<section id="product-section">
+
+    <div class="top-header-div">
+        <h3 class="page-header" style="text-align: left;"></h3>
+        <select name="filter" onclick="sortFilter()" id="filter">
+            <option >SORT BY</option>
+            <option  value="HighToLow">Price: High to Low</option>
+            <option  value="LowToHigh">Price: Low to High</option>
+            <option  value="top">Top Rated</option>
+            <option value="50">Better Discount</option>
+            <!-- <option value="recomended">Recomended</option>
+            <option >Whats New</option>
+            <option >Popularity</option>
+            <option>Customer Rating</option> -->
+        </select>
+
+    </div>
+    <div class="shop-page">
+        <div class="shop-filter-desktop">
+            <p class="filter-head-p">FILTERS</p>
+            <p class="brand-range-p">BRANDS</p>
+            <div id="brands-div" class="size-range">
+                <p class="more-p">+594 more</p>
+            </div>
+            <div class="size-range">
+                <p>PRICE</p>
+                <div>
+                    <input value="3850" type="checkbox" class="size-checkbox" name="price-filter"
+                        onclick="priceRange(this)"><label for="">Rs. 199 to Rs. 3850</label>
+                </div>
+                <div>
+                    <input value="7501" type="checkbox" class="size-checkbox" name="price-filter"
+                        onclick="priceRange(this)"><label for="">Rs. 3850 to Rs. 7501</label>
+                </div>
+                <div>
+                    <input value="11152" type="checkbox" class="size-checkbox" name="price-filter"
+                        onclick="priceRange(this)"><label for="">Rs. 7501 to Rs. 11152</label>
+                </div>
+                <div>
+                    <input value="14803" type="checkbox" class="size-checkbox" name="price-filter"
+                        onclick="priceRange(this)"><label for="">Rs. 11152 to Rs. 14803</label>
+                </div>
+            </div>
+
+            <div class="size-range">
+                <p>COLOR</p>
+                <div>
+                    <input value="Black" onclick="colorRange(this)" type="checkbox" class="size-checkbox" name="color-filter"><div class="color-black"></div> <label for="">Black</label>
+                </div>
+                <div>
+                    <input value="Blue" onclick="colorRange(this)" type="checkbox" class="size-checkbox" name="color-filter"><div class="color-blue"></div> <label for="">Blue</label>
+                </div>
+                <div>
+                    <input value="White" onclick="colorRange(this)" type="checkbox" class="size-checkbox" name="color-filter"><div class="color-white"></div> <label for="">White</label>
+                </div>
+                <div>
+                    <input value="NavyBlue" onclick="colorRange(this)" type="checkbox" class="size-checkbox" name="color-filter"><div class="color-navyBlue"></div><label for="">Navy Blue</label>
+                </div>
+                <div>
+                    <input value="Green" onclick="colorRange(this)" type="checkbox" class="size-checkbox" name="color-filter"><div class="color-green"></div><label for="">Green</label>
+                </div>
+                <div>
+                    <input value="Red" onclick="colorRange(this)" type="checkbox" class="size-checkbox" name="color-filter"><div class="color-red"></div><label for="">Red</label>
+                </div>
+                <div>
+                    <input value="Grey" onclick="colorRange(this)" type="checkbox" class="size-checkbox" name="color-filter"><div class="color-grey"></div><label for="">Grey</label>
+                </div>
+                <div><p class="more-p">+39 more</p></div>
+            </div>
+
+            <div class="price">
+                <p>DISCOUNT RANGE</p>
+                <div>
+                    <input type="radio" value="10" name="discount-range" onclick="discountRange()"><label for="">10% and above</label>
+                </div>
+                <div>
+                    <input type="radio" value="20" name="discount-range" onclick="discountRange()"><label for="">20% and above</label>
+                </div>
+                <div>
+                    <input type="radio" value="30" name="discount-range" onclick="discountRange()"><label for="">30% and above</label>
+                </div>
+                <div>
+                    <input type="radio" value="40" name="discount-range" onclick="discountRange()"><label for="">40% and above</label>
+                </div>
+                <div>
+                    <input type="radio" value="50" name="discount-range" onclick="discountRange()"><label for="">50% and above</label>
+                </div>
+                <div>
+                    <input type="radio" value="60" name="discount-range" onclick="discountRange()"><label for="">60% and above</label>
+                </div>
+                <div>
+                    <input type="radio" value="70" name="discount-range" onclick="discountRange()"><label for="">70% and above</label>
+                </div>
+ 
+            </div>
+        </div>
+
+        <!-- ====================all products===================================  -->
+        <div id="wrapper"></div>
+	    </div>
+    </section>
+    <div class="footer" ></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script  src="./JS/nav.js"></script>
+<script type="module" src="./JS/product-nav.js"></script>
+<!-- <script type="module" src="./JS/product-search.js"></script> -->
+
+<script src="./JS/product.js"></script>
+
+</html>

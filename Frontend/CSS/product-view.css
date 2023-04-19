@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #282c43;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+}
+/* -------------------------------loading screen------------------------------------------------------------------  */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url(../Payment-Img/loading\(2\).gif) no-repeat center;
+    z-index: 9999999;
+}
+
+
+ /* --------------------------section------------------------------  */
+#product-view-section{
+    margin-top: 100px;
+    width: 100%
+}
+/* -------------------------product view div---------------------------  */
+#product-view-div{
+    margin: auto;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------product image div------------------------------   */
+.wraper{
+    display: none;
+}
+
+.product-view-img-div{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 30px;
+}
+
+.product-view-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.product-view-img>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 2s;
+}
+.product-view-img:hover img{
+    transform: scale(1.1);
+}
+.modal-body>img{
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------product details div---------------------------------------  */
+.product-view-details-div{
+    width: 33%;
+}
+
+
+/* ---------------------------- product heading -----------------------------------  */
+.product-view-heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+
+}
+/* ------------------------------product type heading----------------------------------  */
+.product-view-category-heading{
+    color: #9a9ca5;
+    margin-top: 15px;
+    font-weight: 400;
+}
+/* --------------------------product rating div----------------------------------------  */
+
+.product-view-rating-div{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(154,156,165, 0.7);
+}
+.product-view-rating-div p{
+    margin-left: 5px;
+}
+.product-view-star{
+    color: black;
+    font-weight: bolder;
+}
+.fa-solid.fa-star{
+    color: #14958f;
+    margin-right: 5px;
+}
+
+/* ----------------------------product price div------------------------------------  */
+.product-view-price-div{
+    margin-top: 15px;
+    display: flex;
+}
+.product-view-price{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+}
+.product-view-real-price{
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #9a9ca5;
+}
+strike{
+    color: #9a9ca5;
+}
+
+.product-view-tax-p{
+    color: #14958f;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* ----------------------------product size div---------------------------------------------  */
+
+.product-view-size-heading{
+    display: flex;
+    font-weight: 700;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+}
+.product-view-size-heading>p:nth-child(1){
+    font-size: 16px;
+}
+.product-view-size-heading>p:nth-child(2){
+    color: #ff446d;
+    margin-top: 2px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.fa-solid.fa-arrow-up-right-from-square{
+    color: #ff446d;
+    /* color:; */
+}
+
+/* -------------------------------size options------------------------------------------------------  */
+.size-options{
+    margin-top: 10px;
+    display: flex;
+}
+.size-options>button{
+    padding: 2% 3% ;
+    border: 1px solid rgba(154,156,165, 0.7);
+    border-radius: 55%;
+    margin-left: 5px;
+    font-weight: 700;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+}
+.size-options>div:nth-child(4){
+    padding: 2% 2% ;
+
+}
+
+/* ------------------------------- product button div ------------------------------------  */
+.product-view-btn-div{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    margin-top: 30px;
+}
+.add-to-cart-btn{
+    width: 57%;
+    padding: 15px 0px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+    background: #ff3e6c;
+    border: none;
+    border-radius: 5px;
+}
+.cart-go{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /* color: white; */
+    width: 57%;
+    padding: 15px 0px;
+  
+    /* color: white; */
+    background: #ff3e6c;
+    border: none;
+    border-radius: 5px;
+}
+.cart-go button{
+    background-color: #ff3f6c;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+/* .cart-go{
+    display: none;
+    text-decoration: none;
+    color: white;
+} */
+.fa-solid.fa-bag-shopping,.fa-solid.fa-arrow-right-long{
+    color: white;
+    margin-right: 10px;
+}
+.fa-regular.fa-heart{
+    margin-right: 10px;
+}
+.wishlist-btn{
+    width: 40%;
+    border: 1px solid rgba(154,156,165, 0.7);
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+    padding: 15px 0px;
+    font-weight: 700;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+/* -------------------------product delivary------------------------------------------  */
+
+.product-view-delivery-div{
+    margin-top: 50px;
+}
+.delivery-details-heading{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.product-view-delivery-flex-div>div{
+    display: flex;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.product-view-delivery-flex-div>div img{
+    width: 35px;
+    height: 40px;
+}
+.product-view-delivery-flex-div>div p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.ori{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/* ----------------------- product offer -------------------------------------  */
+.product-view-offer-div{
+    padding-bottom:20px;
+    border-bottom: 1px solid #9a9ca5;
+}
+
+
+.fa-solid.fa-tag{
+    margin-left: 5px;
+}
+.best-price-p{
+    margin-top: 20px;
+    font-weight: 700;
+}
+.best-price{
+    color: #ff905a;
+
+}
+.product-view-offer-div li{
+    margin-left: 20px;
+}
+.product-view-offer-div>ul h4{
+    margin-top: 5px;
+}
+.product-view-offer-div>ul p{
+    color: #ff3f6c;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+/* -----------------------------product more details-----------------------   */
+
+.product-view-more-details-div{
+    margin-top: 20px;
+}
+.product-view-more-details-div h3{
+    margin-top: 5px;
+}
+.product-view-more-details-div p{
+    margin-top: 3px;
+}
+
+
+
+
+/* ======================================================================================== */
+/* ------------------------ similar products section ------------------------------- */
+/* ========================================================================================= */
+#similar-products-section{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+#similar-products-div{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px 20px;
+}
+.similar-products-heading-div{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* -----------------------------similar products div----------------------------- */
+.similar-products{
+    height: auto;
+}
+
+/* --------------------------------similar product image div-------------------------- */
+.similar-products-img-div{
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+.similar-products-img-div img{
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------------similar product image rating ------------------------------- */
+.similar-products-rating-div{
+    background: rgb(255, 255, 255,0.5);
+    display: flex;
+    
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding-left:15px;
+    /* font-size:17px; */
+    z-index:5;
+}
+
+/* --------------------------------similar product details price div-------------------------------------------  */
+.similar-products-price-div{
+    display: flex;
+}
+.similar-products-price-div strike{
+    color: #9a9ca5;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+.discount{
+    color: #ff905a;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+
+/* --------------------------------------responsive => size over 1200px---------------------------------------------------------------------  */
+
+@media (min-width:1401px){
+
+    /* ------------------------------product view section ------------------------------------------------  */
+    /* #product-view-section{
+        width: 85%;
+        margin: auto;
+    } */
+
+    /* =============================================================================================================== */
+    /* --------------------------------- similar view product section ----------------------------------------------------- */
+    /* ===================================================================================================================== */
+    /* #similar-products-section{
+        width: 85%;
+        margin: auto;
+    } */
+    /* -------------------------------------- similar-products ---------------------------------------------------------------- */
+    /* #similar-products-div{
+        grid-template-columns: repeat(5,1fr);
+    } */
+}
+/* --------------------------------------responsive => size over 1300px---------------------------------------------------------------------  */
+
+/* ========================================================================================================================================================= */
+@media (max-width:1300px){
+    /* -------------------------------------- similar-products ---------------------------------------------------------------- */
+    #similar-products-div{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+/* =================================================================================================================================================== */
+@media (max-width:1100px){
+    .product-view-img-div{
+        min-width: 50%;
+        max-height: 100vh;
+        display: flex;
+        overflow-x: auto;
+    }
+    .product-view-img{
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .gallery-item{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+} 
+@media (max-width:990px){
+    #add-to-cart-btn,#wishlist-btn{
+        font-size: 1rem;
+    }
+    .fa-solid.fa-bag-shopping,.fa-regular.fa-heart{
+        margin-right: 1px;
+    }
+}
+
+
+@media (max-width:764px){
+    #product-view-div{
+        flex-direction: column;
+    }
+    .product-view-img-div{
+        min-width: 100%;
+    }
+    .product-view-details-div{
+        width: 100%;
+    }
+    .product-view-img{
+        min-width: 48%;
+    }
+    #similar-products-section{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .similar-products-heading-div{
+        width: 100%;
+    }
+    #similar-products-div{
+        width: 100%;
+        /* grid-template-columns: repeat(2,1fr); */
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+    #similar-products-div::-webkit-scrollbar{
+        width: 0;
+    }
+    #similar-products-div>div{
+        min-width: 200px;
+    }
+    .similar-products-img-div{
+        height: 60%;
+        width: 100%;
+    }
+    .similar-products-details-div{
+        width: 100%;
+    }
+}
+
+
+
+
+/* =================================================================================================================================================== */
+
+/* --------------------------------------responsive => size over 1100px---------------------------------------------------------------------  */
+
+/* ========================================================================================================================================================= */
+
+
+/* @media only screen and (max-width:1200px){
+    .wraper{
+        flex-direction: column;
+        height: auto;
+        padding: 5% 0;
+        margin-left: 5%;
+    
+    }
+    .text{
+        padding-top: 50px;
+    }
+    
+    } */
+    /* .wraper{
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    @media only screen and (max-width:600px){
+/* ----------product view div---------------------------- */
+        #product-view-div{
+            width:80%;
+            margin: auto;
+            height: auto;
+    /* display: flex;
+    justify-content: space-between; */
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+/* ------------product view img div-------------------------- */
+        .product-view-img-div{
+            display: none;
+        }
+/* ---------------product view details div---------------------- */
+        .product-view-details-div{
+            width: 100%;
+
+        }
+        .size-options{
+            width: 100%;
+            justify-content: space-around;
+        }
+        .size-options button{
+            padding: 4% 6%;
+        }
+/* -------------product image div for smaller size-------------------- */
+        .wraper{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+
+            justify-content: space-evenly;
+        }
+    
+        .all-images{
+            height: 100%;
+            display: flex;
+        }
+        .small-images{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+        .small-images img{
+            opacity: 75%;
+            height: 19%;
+            margin-bottom: 9px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 10px;
+        
+        }
+        .small-images img:hover{
+            opacity: 1;
+        }
+        .main-images img{
+            height: 90%;
+        }
+        /* .wraper{
+            display: flex;
+            justify-content: space-evenly;
+
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            flex-direction: column;
+            height: auto;
+            padding: 5% 0;
+            margin-left: 5%;
+        
+        } */
+        .all-images{
+            flex-direction: column;
+            height: auto;
+        }
+        .small-images{
+            flex-direction: row;
+            justify-content: space-evenly;
+            order: 1;
+        }
+        .product-box{
+            width: 100%;
+        }
+        .main-images img{
+            width: 100%;
+        }
+        .small-images img{
+            width: 25%;
+        }
+        
+
+/* ----------------similar products section ------------------- */
+#similar-products-section{
+    width: 80%;
+    margin: auto;
+}
+
+.similar-products-heading-div{
+    width: 100%;
+}
+#similar-products-div{
+    width: 100%;
+    /* grid-template-columns: repeat(2,1fr); */
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+#similar-products-div::-webkit-scrollbar{
+    width: 0;
+}
+#similar-products-div>div{
+    min-width: 200px;
+}
+.similar-products-img-div{
+    height: 60%;
+    width: 100%;
+}
+.similar-products-details-div{
+    width: 100%;
+}
+}
+
+@media (max-width:325px){
+    .size-options{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .size-options button{
+        padding: 4% 6%;
+    }
+    .product-view-btn-div{
+        width: 100%;
+    }
+    #add-to-cart-btn,#wishlist-btn{
+        width: 49%;
+        font-size: 15px;
+    }
+}

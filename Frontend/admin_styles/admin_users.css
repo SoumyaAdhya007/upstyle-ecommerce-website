@@ -1,0 +1,70 @@
+.Users{
+    width: 95%;
+    margin: auto;
+    margin-top: 1%
+}
+.Users h2{
+    font-weight: normal;
+    color: white;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+.gallery>div{
+    border: 1px solid white;
+    /* display: flex; */
+    /* height: 250px; */
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 3%;
+    transition: 0.5s;
+}
+
+.gallery>div:hover{
+    box-shadow: rgba(172, 172, 172, 0.349) 0px 0px 15px;
+}
+
+.gallery button{
+    width: 50%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallery p{
+    color: white;
+    font-size: small;
+    text-align: center;
+    margin: 3%;
+}
+
+.gallery img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.gallery>h1{
+    color: white;
+}
+
+@media all and (max-width:800px) and (min-width:500px){
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media all and (max-width:500px){
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

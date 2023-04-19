@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/cart_page.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <a href="index.html"
+          ><img id="logo" src="./rudra_images/upstylelogo.png" alt=""
+        /></a>
+      </div>
+      <div>
+        <h5 id="BAP">
+          <span style="color: rgb(0, 192, 192)" class="bag">BAG</span><span class="dash">----------</span
+          ><span class="address">ADDRESS</span><span class="dash">----------</span><span class="payment">PAYMENT</span>
+        </h5>
+      </div>
+      <div>
+        <img id="secure" src="./rudra_images/100secure.PNG" alt="" />
+      </div>
+    </div>
+    <hr />
+    <div id="container">
+      <div id="left">
+        <div id="cart_items"></div>
+      </div>
+      <div id="right">
+        <div id="promo">
+          <p style="font-size: large; font-weight: bold">Have a Coupon ?</p>
+          <p
+            id="coupon"
+            style="
+              color: green;
+              font-size: large;
+              font-weight: bold;
+              cursor: pointer;
+            "
+          >
+            Redeem &#187;
+          </p>
+        </div>
+        <div id="gift">
+          <img src="./rudra_images/gift.PNG" alt="" />
+        </div>
+        <div id="cart_total">
+          <p class="p_class">
+            <span>Total MRP</span><span id="itm_total"></span>
+          </p>
+          <p class="p_class">
+            <span>Discount on MRP</span><span id="ttl_dsc1"></span>
+          </p>
+
+          <p class="p_class" id="total_g">
+            <span>Total Savings</span><span id="ttl_dsc"></span>
+          </p>
+          <p class="p_class">
+            <span>Convenience Fee</span><span style="color: green">Free</span>
+          </p>
+          <hr />
+          <p class="p_class" id="tbp">
+            <span>To be paid</span><span id="ttl"></span>
+          </p>
+
+          <button id="chkout">PLACE ORDER</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  document.getElementById("chkout").addEventListener("click", () => {
+    window.location.href = "./address_page.html";
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./JS/cart_page.js"></script>
+

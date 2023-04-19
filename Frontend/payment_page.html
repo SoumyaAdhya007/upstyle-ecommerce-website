@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/payment_page.css" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <a href=""
+          ><img id="logo" src="./rudra_images/upstylelogo.png" alt=""
+        /></a>
+      </div>
+      <div>
+        <h5 id="BAP">
+          <span class="bag">BAG</span><span class="dash">----------</span><span class="address">ADDRESS</span
+          ><span class="dash">----------</span
+          ><span style="color: rgb(0, 192, 192)">PAYMENT</span>
+        </h5>
+      </div>
+      <div>
+        <img id="secure" src="./rudra_images/100secure.PNG" alt="" />
+      </div>
+    </div>
+    <hr />
+    <div id="container">
+      <div id="left">
+        <div id="left1">
+          <h3>&#10684; Bank Offers</h3>
+          <p style="margin-top: -10px">
+            &#x2022; 10% Instant Discount on RBL Bank Credit and Debit Cards on
+            a minimum spend of 2500. TCA<br /><br />
+            <span id="tca"
+              >&#65381;&#65381;&#65381;&#65381;&#65381;&#65381;&#65381;</span
+            ><span id="more">
+              &#x2022; 10% Instant Discount with Standard Chartered Credit and
+              Debit Cards on a minimum spend of 2500. TCA<br /><br />
+              &#x2022; 5% Unlimited Cashback on Flipkart Axis Bank Ctedit Card
+              TCA<br /><br />
+              &#x2022; 10% Cashback upto Rs 250 on a minimum spend of Rs 1000
+              with PayZapp TCA<br /><br />
+              &#x2022; Upto Rs 500 Cashback on Mobikwik wallet transaction of
+              min Rs 999. Use code MBK500 on mobikwik TCA<br /><br />
+              &#x2022; Flat Rs 200 Cashback on first Airtel Payments Bank
+              transcation on myntra on a min spend of Rs 2000 TCA</span
+            >
+          </p>
+          <button id="myBtn">Show More &#8675;</button>
+        </div>
+        <div id="left2">
+          <div>
+            <h3>Choose Payment Mode</h3>
+          </div>
+          <div id="mode">
+            <div id="modes">
+              <button id="child1" class="btn">Credit/Debit Card</button>
+              <button id="child2" class="btn">Net Banking</button>
+              <button id="child3" class="btn">Paytm/Wallets</button>
+              <button id="child4" class="btn">UPI</button>
+              <button id="child5" class="btn">Cash On Delivery</button>
+              <button id="child6" class="btn">EMI/Pay Later</button>
+            </div>
+            <div id="modepay" style="display: none">
+              <div>
+                <input id="checkbox" type="checkbox" />
+                <img src="./rudra_images/paytm_logo.jpg" alt="" />
+                <p>Pay through Paytm</p>
+              </div>
+              <div id="pnow">
+                <button id="paynow" style="display: none">PAY NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="ttl">
+          <div>
+            <h4>Total Amount</h4>
+          </div>
+          <div>
+            <h4>Rs. <span id="carttotal">0</span>/-</h4>
+          </div>
+        </div>
+        <div id="continue">
+          <a href=""
+            ><h2 style="color: rgb(0, 0, 0)">Continue Shopping ?</h2></a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="paymentoptions">
+      <div id="bleft">
+        <img src="./rudra_images/payopt.PNG" alt="" />
+      </div>
+      <div style="cursor: pointer" id="bright">Need Help? Contact Us</div>
+    </div>
+  </body>
+</html>
+<script src="./JS/payment_page.js"></script>
+<script src="./JS/payment.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

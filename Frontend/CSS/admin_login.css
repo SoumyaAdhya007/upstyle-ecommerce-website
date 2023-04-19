@@ -1,0 +1,9 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.heading{
+    font-size: 35px;
+    color: rgb(199, 15, 91);
+    text-align: center;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address</title>
+    <link rel="stylesheet" href="./CSS/address_page.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <a href="index.html"
+          ><img id="logo" src="./rudra_images/upstylelogo.png" alt=""
+        /></a>
+      </div>
+      <div>
+        <h5 id="BAP">
+          <span class="bag">BAG</span><span class="dash">----------</span
+          ><span style="color: rgb(0, 192, 192)">ADDRESS</span
+          ><span class="dash">----------</span><span class="payment">PAYMENT</span>
+        </h5>
+      </div>
+      <div>
+        <img id="secure" src="./rudra_images/100secure.PNG" alt="" />
+      </div>
+    </div>
+    <hr />
+    <div id="part2">
+      <div id="part21">
+        <div id="form">
+          <div class="head">CONTACT DETAILS</div>
+          <div id="names">
+            <input id="name" type="text" placeholder="Name*" required />
+          </div>
+          <div id="mobileno">
+            <input id="mobile" type="text" placeholder="Mobile No*" required/>
+          </div>
+          <div class="head">ADDRESS</div>
+          <div id="pincode">
+            <input id="pin" type="number" placeholder="Pin Code*" required/>
+          </div>
+          <div id="address">
+            <input
+              id="house"
+              type="text"
+              placeholder="Address(House No, Building, Sreet, Area)*"
+              required
+            />
+          </div>
+          <div id="locality">
+            <input id="local" type="text" placeholder="Locality / Town*" required/>
+          </div>
+          <div id="CITY">
+            <div id="city">
+              <input
+                id="incity"
+                type="text"
+                placeholder="City / District*"
+                style="margin-right: 30px; width: 80%"
+                required
+              />
+            </div>
+            <div id="state">
+              <input
+                id="instate"
+                type="text"
+                placeholder="State*"
+                style="margin-left: 30px; width: 80%"
+                required
+              />
+            </div>
+          </div>
+          <div class="head">SAVE ADDRESS AS</div>
+          <div id="as">
+            <div id="home">Home</div>
+            <div id="work">Work</div>
+          </div>
+          <div id="default">
+            <input id="checkbox" type="checkbox" required/>
+            <p>Make this my default address</p>
+          </div>
+          <div id="addaddress">
+            <button id="addbutton" style="cursor: pointer">ADD ADDRESS</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="part22">
+        <div id="price">
+          <div id="pricedetail">
+            <h3>PRICE DETAILS ( <span></span> )</h3>
+          </div>
+
+          <div class="spacebetween">
+            <div>Total MRP</div>
+            <div id="totalmrp">₹</div>
+          </div>
+
+          <div class="spacebetween">
+            <div>Discount on MRP</div>
+            <div id="discountmrp" style="color: #03a685"></div>
+          </div>
+
+          <div class="spacebetween">
+            <div>
+              Convenience Fee
+              <span style="color: rgb(255, 0, 43); font-weight: bold"
+                >Know More</span
+              >
+            </div>
+            <div style="display: flex">
+              <div id="₹69">₹ 69</div>
+              <div id="freeship">FREE</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="ordercontainer">
+          <div id="totalprice">
+            <div>Total Amount</div>
+            <div id="totalamount">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="paymentoptions">
+      <div id="bleft">
+        <img src="./rudra_images/payopt.PNG" alt="" />
+      </div>
+      <div style="cursor: pointer" id="bright">Need Help? Contact Us</div>
+    </div>
+  </body>
+</html>
+<script src="./JS/address_page.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

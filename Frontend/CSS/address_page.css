@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#part2 {
+  /* border: 1px solid red; */
+  margin: auto;
+  height: auto;
+  width: 80%;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+#paycontainer {
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#part21 {
+  width: 50%;
+}
+#part21 > div {
+  margin: auto;
+  margin-top: 10px;
+  width: 70%;
+  border: 1px solid #eaeaec;
+  /* border: 1px solid blue; */
+
+  /* height: 40px; */
+}
+#form > div {
+  margin: 10px 0px;
+}
+input {
+  width: 90%;
+  margin-left: 10px;
+  padding: 10px;
+}
+#CITY {
+  width: 95%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#as {
+  display: flex;
+  /* border: 1px solid red; */
+}
+#home {
+  cursor: pointer;
+  border-radius: 40px;
+  white-space: nowrap;
+  align-self: center;
+  height: fit-content;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid #ff3f6c;
+  color: #ff3f6c;
+}
+#work {
+  cursor: pointer;
+  border-radius: 40px;
+  white-space: nowrap;
+  align-self: center;
+  height: fit-content;
+  margin-right: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid #282c3f;
+  color: #282c3f;
+}
+#city > input {
+  background-color: #f5f5f6;
+  border: none;
+}
+#state > input {
+  border: none;
+  background-color: #f5f5f6;
+}
+#default {
+  display: flex;
+  align-content: center;
+}
+#default > input {
+  width: auto;
+  align-self: center;
+}
+#default > p {
+  display: block;
+  margin-left: 6px;
+  font-size: 13px;
+}
+#addaddress {
+  margin-top: 0px !important;
+}
+#addbutton {
+  background-color: #ff3f6c !important;
+  color: white !important;
+  font-size: 14px !important;
+  border-radius: 4px !important;
+  padding: 14px !important;
+  text-align: center;
+  margin: 5px;
+  border: none;
+  width: 97%;
+}
+#part22 {
+  width: 50%;
+  height: auto;
+}
+#part22 > div {
+  margin: 10px;
+  padding-top: 20px;
+  height: auto;
+  width: 55%;
+  margin: auto;
+}
+#totalprice {
+  display: flex;
+  margin-bottom: 6px;
+  justify-content: space-between;
+}
+#totalprice div {
+  font-weight: bold;
+}
+#offerlist {
+  height: auto;
+}
+#paylogo {
+  display: grid;
+  width: 65%;
+  grid-template-columns: repeat(10, 1fr);
+}
+#paylogo > img {
+  width: 100%;
+}
+#help {
+  text-align: justify;
+  align-self: center;
+  color: #282c3f;
+  font-weight: 600;
+  box-sizing: border-box;
+  float: right;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.head {
+  padding: 16px 16px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #282c3f;
+}
+#prices {
+  display: flex;
+}
+#prices > p {
+  margin-right: 6px;
+  font-size: 16px;
+}
+#rate {
+  font-weight: 600;
+  color: #282c3f;
+  padding-right: 5px;
+}
+#costprices {
+  text-decoration: line-through;
+  color: #bfc0c6;
+  fill: #bfc0c6;
+}
+#discounts {
+  color: #ff3f6c;
+  padding-left: 2px;
+}
+#date {
+  color: #282c3f;
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  line-height: 15px;
+}
+.spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+#pricedetail {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 24px 0 16px;
+  color: #535766;
+}
+#price {
+  color: #282c3f;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+#price > div > div {
+  margin: 8px;
+}
+#₹69 {
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+#freeship {
+  color: #03a685;
+  text-decoration: none;
+}
+#appcoup {
+  font-size: 14px;
+  color: #ff3f6c;
+  cursor: pointer;
+}
+#ordercontainer {
+  border-top: 1px solid #eaeaec;
+}
+#paymentoptions {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#bleft img {
+  width: 600px;
+}
+#bright {
+  /* border: 1px solid red; */
+  font-weight: bold;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  height: 80px;
+  width: 80px;
+}
+#secure {
+  height: 30px;
+}
+#navbar span {
+  margin: 0px 10px;
+}
+@media screen and (min-width: 300px) and (max-width: 950px) {
+  .dash,.bag,.payment{
+    display: none;
+  }
+  #BAP {
+    display: flex;
+    flex-direction: column;
+  }
+  #part2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #paymentoptions {
+    display: flex;
+    flex-direction: column;
+  }
+  #paymentoptions img {
+    width: 300px;
+  }
+  #bright {
+    font-size: small;
+  }
+  #part21,
+  #part22 {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  #form input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: white;
+  }
+  #part22 {
+    font-size: small;
+    /* border: 1px solid red; */
+  }
+  #part21 > div {
+    border: none;
+  }
+  #part22 > div {
+    width: 100%;
+  }
+  #price {
+    /* border: 1px solid rgb(0, 139, 106); */
+    font-size: 13px;
+  }
+}
